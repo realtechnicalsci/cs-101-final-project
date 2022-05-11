@@ -29,12 +29,23 @@ class Student:
         #TODO: Complete this method to initialize student data. Be sure to use the variables outlined here (also seen in the __repr__ method)
         # student_data should be a list with containing:
         # name at index 0 (make this a string)
+        self.name = student_data[0]
         # grade at index 1 (make this an int)
+        self.grade = student_data[1]
         # graduation_requirements at index 2 (make this a boolean - True if they've been met, False if they haven't)
+        self.graduation_requirements = student_data[2]
+        if self.graduation_requirements == "met":
+            self.graduation_requirements = True
+        elif self.graduation_requirements == "not met":
+            self.graduation_requirements = False
         # credits at index 3 (make this an int)
+        self.credits = student_data[3]
         # transferring at index 4 (make this a boolean - True if they're transferring, False if they're not)
-        
-        pass
+        self.transferring = student_data[4]
+        if self.transferring == "transferring":
+            self.transferring = True
+        elif self.transferring == "not transferring":
+            self.transferring = False
     
     # defines the "less than" method for students (for sorting purposes)
     def __lt__(self, other):
@@ -66,9 +77,10 @@ stats = {
 }
 
 #TODO: Write the rest of your code
-
-
-
+for student in maui_high:
+  new_student = Student(student)
+  if new_student.transferring == "transferring":
+    print("yes")
 
 
 
