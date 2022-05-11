@@ -68,7 +68,15 @@ for student in maui_high:
   new_student = Student(student)
   if new_student.grade == 9 and new_student.credits >= 13:
     new_student.grade == 10
+  	new_maui_high.append(new_student.name)
+  if new_student.grade == 10 and new_student.credits >= 26:
+  	new_student.grade == 11
     new_maui_high.append(new_student.name)
+	if new_student.grade == 11 and new_student.credits >= 39:
+    new_student.grade == 12
+    new_maui_high.append(new_student.name)
+	if new_student.grade == 12 and new_student.credits >= 52:
+    pass
 
 print(str(new_maui_high))
 # stats is a dictionary. It has already been created for you with all of the data that you need.
