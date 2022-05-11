@@ -33,6 +33,7 @@ class Student:
         # graduation_requirements at index 2 (make this a boolean - True if they've been met, False if they haven't)
         # credits at index 3 (make this an int)
         # transferring at index 4 (make this a boolean - True if they're transferring, False if they're not)
+        
         pass
     
     # defines the "less than" method for students (for sorting purposes)
