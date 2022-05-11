@@ -29,9 +29,9 @@ class Student:
         #TODO: Complete this method to initialize student data. Be sure to use the variables outlined here (also seen in the __repr__ method)
         # student_data should be a list with containing:
         # name at index 0 (make this a string)
-        self.name = student_data[0]
+        self.name = str(student_data[0])
         # grade at index 1 (make this an int)
-        self.grade = student_data[1]
+        self.grade = int(student_data[1])
         # graduation_requirements at index 2 (make this a boolean - True if they've been met, False if they haven't)
         self.graduation_requirements = student_data[2]
         if self.graduation_requirements == "met":
@@ -39,13 +39,17 @@ class Student:
         elif self.graduation_requirements == "not met":
             self.graduation_requirements = False
         # credits at index 3 (make this an int)
-        self.credits = student_data[3]
+        self.credits = int(student_data[3])
         # transferring at index 4 (make this a boolean - True if they're transferring, False if they're not)
         self.transferring = student_data[4]
         if self.transferring == "transferring":
             self.transferring = True
         elif self.transferring == "not transferring":
             self.transferring = False
+
+        
+
+        
     
     # defines the "less than" method for students (for sorting purposes)
     def __lt__(self, other):
@@ -60,27 +64,31 @@ class Student:
 # new_maui_high is a list for next year's student data. When you're finished, it should contain
 # a list of Student objects updated for next school year.
 new_maui_high = []
+for student in maui_high:
+  new_student = Student(student)
+  if new_student.grade == 9 and new_student.credits >= 13:
+      new_maui_high.append(new_student)
 
 # stats is a dictionary. It has already been created for you with all of the data that you need.
 # All you need to take care of is updating these values. This is easy to do. If you'd like to
 # set "graduating" to 74, for instance, all you have to do is:
 # stats["graduating"] = 74
 stats = {
-    "graduating":0, # the number of students who will be graduating this year
-    "graduation_rate":0.0, # the number of students graduating divided by the total number of seniors this year (NOT next year's seniors)
-    "maui_waena_incoming":0, # the number of students coming to Maui High from Maui Waena Intermediate
-    "lokelani_incoming":0, # the number of students coming to Maui High from Lokelani Intermediate
-    "freshmen":0, # the number of freshman for next year
-    "sophomores":0, # the number of sophomores for next year
-    "juniors":0, # the number of juniors for next year
-    "seniors":0 # the number of seniors for next year
+		"graduating":0, # the number of students who will be graduating this year
+		"graduation_rate":0.0, # the number of students graduating divided by the total number of seniors this year (NOT next year's seniors)
+		"maui_waena_incoming":0, # the number of students coming to Maui High from Maui Waena Intermediate
+		"lokelani_incoming":0, # the number of students coming to Maui High from Lokelani Intermediate
+		"freshmen":0, # the number of freshman for next year
+		"sophomores":0, # the number of sophomores for next year
+		"juniors":0, # the number of juniors for next year
+		"seniors":0 # the number of seniors for next year
 }
 
 #TODO: Write the rest of your code
 for student in maui_high:
   new_student = Student(student)
-  if new_student.transferring == "transferring":
-    print("yes")
+  print(str(new_maui_high))
+
 
 
 
