@@ -67,8 +67,10 @@ new_maui_high = []
 for student in maui_high:
   new_student = Student(student)
   if new_student.grade == 9 and new_student.credits >= 13:
-      new_maui_high.append(new_student)
+    new_student.grade == 10
+    new_maui_high.append(new_student.name)
 
+print(str(new_maui_high))
 # stats is a dictionary. It has already been created for you with all of the data that you need.
 # All you need to take care of is updating these values. This is easy to do. If you'd like to
 # set "graduating" to 74, for instance, all you have to do is:
@@ -85,9 +87,6 @@ stats = {
 }
 
 #TODO: Write the rest of your code
-for student in maui_high:
-  new_student = Student(student)
-  print(str(new_maui_high))
 
 
 
