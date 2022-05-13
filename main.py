@@ -47,9 +47,12 @@ class Student:
             self.transferring = True
         elif self.transferring == "not transferring":
             self.transferring = False
+      
       elif len(student_data) == 3:
         self.name = str(student_data[0])
         self.grade = int(student_data[1])
+        self.high_school = str(student_data[3])
+        
         
 
         
@@ -76,20 +79,38 @@ total_seniors = 0
 new_maui_high = []
 for student in maui_high:
   new_student = Student(student)
-  if new_student.grade == 9 and new_student.credits >= 13:
+  if new_student.grade == 8 and new_student.high_school == "Maui High":
+    freshmen += 1
+  if new_student.grade == 9 and new_student.credits < 13 and new_student.transferring == False:
+    freshmen += 1
+
+  if new_student.grade == 10 and new_student.credits < 26 and new_student.transferring == False:
+    sophomores += 1
+
+  if new_student.grade == 11 and new_student.credits < 39 and new_student.transferring == False:
+    juniors += 1
+
+  if new_student.grade == 12 and new_student.credits < 52 and new_student.transferring == False:
+    seniors += 1
+    
+  if new_student.grade == 9 and new_student.credits >= 13 and new_student.transferring == False:
     new_student.grade == 10
     sophomores += 1
     new_maui_high.append([new_student.name, new_student.grade])
-  if new_student.grade == 10 and new_student.credits >= 26:
+    
+  if new_student.grade == 10 and new_student.credits >= 26 and new_student.transferring == False:
     new_student.grade == 11
     juniors += 1
     new_maui_high.append([new_student.name, new_student.grade])
-  if new_student.grade == 11 and new_student.credits >= 39:
+    
+  if new_student.grade == 11 and new_student.credits >= 39 and new_student.transferring == False:
     new_student.grade == 12
     seniors += 1
     new_maui_high.append([new_student.name, new_student.grade])
+    
   if new_student.grade == 12:
 		 total_seniors += 1
+    
   if new_student.grade == 12 and new_student.credits >= 52:
     graduating += 1
 
@@ -116,6 +137,9 @@ print(str(stats["graduating"]))
 stats["graduation_rate"] = graduating / total_seniors
 print(str(stats["graduation_rate"]))
 
+stats["freshmen"] = freshmen
+print(str(stats["freshmen"]))
+
 stats["sophomores"] = sophomores
 print(str(stats["sophomores"]))
 
@@ -129,24 +153,31 @@ print(str(stats["seniors"]))
 
 
 def add_student():
-  name = input("Enter student name:")
-  with open("MauieHighTest.csv", "a") as maui_high_append:
-        maui_high_append.write(name + "\n")
+ # name = input("Enter student name:")
+ # currencies.append('Yen')
+  pass
+def look_up_student():
+  pass
+def update_student():
+  pass
 
 
 
-
-while True:
-  print("Options")
-  print("Add New Student: 'a'")
-  print("Student Look Up: 'b'")
-  print("Student Update: 'c'")
-  print("Finish: 'x'")
-  option = input("Enter your option: ")
-  if option == 'a':
-    print("hi")
-  elif option == 'x':
-    break
+ #while True:
+  #print("Options")
+ # print("Add New Student: 'a'")
+ # print("Student Look Up: 'b'")
+ # print("Student Update: 'c'")
+ # print("Finish: 'x'")
+  #option = input("Enter your option: ")
+  #if option == 'a':
+  #  add_student()
+ # if option == 'b':
+  #  look_up_student()
+  #if option == 'c':
+  #  update_student()
+ # elif option == 'x':
+  #  break
 
 
 
