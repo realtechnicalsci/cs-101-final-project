@@ -19,10 +19,12 @@ Afsana Partridge,9,False,0,False
 Agata Bowman,10,False,14,False
 Ahmed Li,12,False,44,False
 Ahmet Mccann,11,False,38,False
+Ailish Leech,13,True,51,False
 Aishah Graves,10,False,13,False
 Aiysha Daniels,12,False,40,False
 Aj Moses,10,False,14,False
 Alanis Serrano,9,False,0,False
+Alannah Clarkson,13,True,50,False
 Alaw Markham,12,False,46,False
 Albert Bell,10,False,21,False
 Alena Chung,10,False,25,False
@@ -36,6 +38,7 @@ Alistair Cherry,11,False,35,False
 Allana Mcknight,10,False,16,False
 Allana Owen,12,False,42,False
 Alvin Hill,12,False,50,False
+Alys Lord,13,True,50,False
 Alysia Pennington,11,False,29,False
 Amandeep Blackburn,12,False,47,False
 Amanpreet Winter,10,False,11,False
@@ -87,6 +90,7 @@ Avneet Arellano,10,False,12,False
 Ayaz Guevara,12,False,51,False
 Ayman Mills,10,False,22,False
 Ayrton Huber,11,False,32,False
+Ayse Rudd,13,True,50,False
 Azeem Whitehead,11,False,25,False
 Bailey Harris,11,False,31,False
 Bayley Horton,12,False,41,False
@@ -111,6 +115,7 @@ Boyd Walls,11,False,28,False
 Bradlee Blackmore,11,False,35,False
 Bradlee Simpson,9,False,0,False
 Brenda Hartley,9,False,0,False
+Bret Keeling,13,True,50,False
 Bret Tran,11,False,31,False
 Britany Hagan,10,False,25,False
 Bronwen Knights,10,False,18,False
@@ -119,6 +124,8 @@ Bryson Dudley,10,False,24,False
 Bryson Jacobson,12,False,40,False
 Caden Mcfadden,10,False,19,False
 Cain Rollins,11,False,28,False
+Caio Meza,13,True,51,False
+Caio Morley,13,False,55,False
 Cairo Eaton,12,False,51,False
 Caitlan Ratcliffe,12,False,40,False
 Calista Legge,10,False,14,False
@@ -129,9 +136,11 @@ Caolan Irvine,10,False,25,False
 Caris Sherman,10,False,19,False
 Carla Riggs,10,False,16,False
 Carlie Lu,11,False,34,False
+Carmen Kirkpatrick,13,True,51,False
 Carolina Foley,10,False,23,False
 Carrie-Ann Hunt,9,False,0,False
 Carson Dunne,11,False,33,False
+Catherine Roach,13,True,50,False
 Cathy Shepard,11,False,29,False
 Catriona Esparza,12,False,50,False
 Cayson Kerr,10,False,16,False
@@ -169,6 +178,7 @@ Corrina Mellor,10,False,22,False
 Crystal Hopkins,12,False,42,False
 Dafydd Wheeler,10,False,17,False
 Daisie Faulkner,12,False,41,False
+Daisie Preece,13,True,51,False
 Dalia Dodd,12,False,40,False
 Dalia Truong,11,False,26,False
 Damian Grant,12,False,47,False
@@ -187,6 +197,8 @@ Darin Summers,9,False,0,False
 Darragh Gilbert,10,False,16,False
 Darrell Welsh,10,False,22,False
 Darryl Keenan,10,False,16,False
+Dave Read,13,False,54,False
+Dawson Easton,13,False,54,False
 Delia Clarke,9,False,0,False
 Delores Ventura,10,False,22,False
 Denny Hackett,10,False,16,False
@@ -222,6 +234,7 @@ Eliana Tait,10,False,14,False
 Elis Singh,10,False,21,False
 Elize Hancock,11,False,32,False
 Ella-Louise Cleveland,12,False,45,False
+Ella-Louise Mcfarland,13,True,51,False
 Ella-Rose Hanna,10,False,11,False
 Ellen Cline,9,False,0,False
 Ellen Sanchez,12,False,47,False
@@ -269,6 +282,7 @@ Ewen Figueroa,11,False,29,False
 Ezekiel Rivas,10,False,17,False
 Faiza Simmons,11,False,33,False
 Faraz Laing,12,False,40,False
+Farhan Kemp,13,False,64,False
 Farrah Rubio,12,False,45,False
 Fatema Simmonds,12,False,45,False
 Fatema Weber,12,False,44,False
@@ -280,6 +294,7 @@ Floyd Hyde,12,False,39,False
 Flynn Decker,11,False,26,False
 Francesca Stephenson,11,False,27,False
 Francis Marks,10,False,20,False
+Franklyn Valentine,13,False,60,False
 Fraser Simmonds,10,False,14,False
 Frederick Callahan,11,False,30,False
 Fredrick Mcneil,10,False,21,False
@@ -294,6 +309,7 @@ Gerrard Keenan,10,False,16,False
 Gideon Booth,11,False,25,False
 Giorgia Holcomb,11,False,35,False
 Giselle Beck,12,False,41,False
+Gracie Wilks,13,True,50,False
 Gracie-Mai Garrett,10,False,23,False
 Greyson Pemberton,12,False,37,False
 Gurleen Kerr,10,False,16,False
@@ -318,6 +334,7 @@ Harry Cantrell,12,False,50,False
 Harvie English,10,False,20,False
 Harvie Mcintosh,12,False,43,False
 Hawwa Davie,12,False,51,False
+Haya Kendall,13,True,50,False
 Haydon Nolan,9,False,0,False
 Hayley Hamer,10,False,14,False
 Hayley Mcdonald,12,False,45,False
@@ -335,6 +352,7 @@ Humaira Rooney,12,False,37,False
 Humera Truong,12,False,37,False
 Huseyin Farrow,11,False,34,False
 Hussain Peck,10,False,18,False
+Hussein Parker,13,False,61,False
 Ian Vickers,12,False,49,False
 Idrees Coleman,12,False,40,False
 Idris Christie,11,False,26,False
@@ -418,12 +436,16 @@ Karol Lee,11,False,38,False
 Kate Cline,11,False,24,False
 Katherine Terry,11,False,35,False
 Kathy Whelan,10,False,18,False
+Katie-Louise Barclay,13,True,50,False
 Katy Li,12,False,49,False
+Kaya Keller,13,True,50,False
+Kaylan Hancock,13,True,51,False
 Kaylen Moran,12,False,42,False
 Kayson Bauer,10,False,22,False
 Kealan Amos,12,False,43,False
 Kean Draper,11,False,33,False
 Kean Larson,9,False,0,False
+Keelan Petersen,13,True,51,False
 Keira Randolph,11,False,35,False
 Kelan Drew,10,False,23,False
 Kelsie Bradford,9,False,0,False
@@ -493,6 +515,7 @@ Lorraine Benson,10,False,25,False
 Lucca Hart,12,False,37,False
 Lucca Sharp,10,False,14,False
 Lucia Hope,11,False,35,False
+Luciana Manning,13,True,51,False
 Luciana Portillo,11,False,33,False
 Luisa Avila,10,False,14,False
 Luisa Hewitt,12,False,37,False
@@ -500,6 +523,7 @@ Lulu Bailey,10,False,24,False
 Lynn Arias,10,False,24,False
 Mabel Whitley,10,False,23,False
 Mac Barry,12,False,46,False
+Mac Simmons,13,True,51,False
 Maci Swift,12,False,43,False
 Maddox Rich,11,False,28,False
 Madelaine Allison,10,False,20,False
@@ -543,6 +567,7 @@ Maude Pratt,12,False,48,False
 Maureen Pearce,11,False,33,False
 Max Garcia,12,False,45,False
 Max Nairn,10,False,14,False
+Maxime Zavala,13,True,50,False
 Maximus Silva,10,False,15,False
 Maxine Colley,10,False,16,False
 Maysa Gillespie,10,False,18,False
@@ -579,6 +604,7 @@ Nafeesa Nichols,11,False,37,False
 Nafisa Iles,11,False,34,False
 Nafisa Traynor,10,False,16,False
 Najma Logan,12,False,48,False
+Najma Stevenson,13,True,50,False
 Nakita Beaumont,9,False,0,False
 Nala Brooks,11,False,31,False
 Nansi Peck,12,False,51,False
@@ -588,6 +614,7 @@ Natasha Osborn,12,False,49,False
 Nathanael Rangel,12,False,41,False
 Nazim Vo,10,False,13,False
 Neel Carroll,12,False,43,False
+Nela Nash,13,False,56,False
 Nellie Freeman,11,False,31,False
 Nelson Dennis,9,False,0,False
 Nettie Le,10,False,20,False
@@ -614,6 +641,7 @@ Orion Hills,11,False,33,False
 Orlaith Bush,10,False,15,False
 Oskar Hayes,10,False,12,False
 Ottilie Foreman,12,False,44,False
+Owais Cline,13,True,50,False
 Parker Hicks,11,False,24,False
 Parker Pruitt,12,False,50,False
 Parris Justice,11,False,25,False
@@ -640,6 +668,7 @@ Rebecca Barber,11,False,24,False
 Rebekah Reid,11,False,29,False
 Reece Charles,10,False,21,False
 Reef Gilmour,12,False,39,False
+Reeva Arias,13,True,51,False
 Regan Chavez,10,False,11,False
 Rehan Mckenzie,12,False,38,False
 Reis Walsh,12,False,49,False
@@ -658,6 +687,7 @@ Rhydian Guy,10,False,18,False
 Rianne Hendrix,11,False,24,False
 Ricardo Hardin,10,False,21,False
 Rida Kaiser,10,False,25,False
+Rishi Lowry,13,True,50,False
 Rita Phillips,9,False,0,False
 Rivka Abbott,10,False,15,False
 Robyn Hammond,12,False,39,False
@@ -666,11 +696,13 @@ Roisin Carroll,10,False,25,False
 Ronaldo Beach,11,False,34,False
 Rose Albert,10,False,20,False
 Roshan Mclean,11,False,30,False
+Rosina Bowman,13,True,50,False
 Ross Montoya,9,False,0,False
 Ruben O'Quinn,12,False,39,False
 Ruby Cullen,11,False,26,False
 Ruby-Rose Baker,11,False,36,False
 Rudy Freeman,9,False,0,False
+Rudy Parra,13,True,51,False
 Rufus Shelton,11,False,38,False
 Rumaisa Couch,11,False,31,False
 Ruqayyah Berg,9,False,0,False
@@ -705,9 +737,12 @@ Seamus Ashley,11,False,36,False
 Selin Wise,11,False,29,False
 Selin Wormald,11,False,36,False
 Serena Parkes,12,False,43,False
+Shabaz Williamson,13,True,50,False
 Shahzaib Downes,12,False,47,False
 Shakir Terrell,11,False,35,False
+Shane Abbott,13,True,50,False
 Shanelle Mccann,10,False,11,False
+Shanna Hussain,13,True,50,False
 Shanna Preston,12,False,49,False
 Sharmin Bryant,10,False,22,False
 Shaurya Sweet,11,False,32,False
@@ -718,10 +753,12 @@ Sherry Lim,9,False,0,False
 Shiv Stokes,12,False,41,False
 Shivam Ridley,10,False,18,False
 Shivam Wilkerson,9,False,0,False
+Shona Watt,13,True,50,False
 Shreya Mcgill,11,False,30,False
 Shyla Atkins,9,False,0,False
 Shyla Short,12,False,48,False
 Sidney Rodriguez,10,False,20,False
+Simrah Mcarthur,13,True,51,False
 Sofia Keeling,11,False,37,False
 Sofie Briggs,11,False,26,False
 Sofija Nash,10,False,14,False
@@ -763,11 +800,13 @@ Tiago Mcarthur,9,False,0,False
 Tina Schofield,12,False,42,False
 Tobey Morton,10,False,20,False
 Tomi Rogers,12,False,46,False
+Tre Romero,13,True,51,False
 Trevor Byrd,11,False,30,False
 Trevor Neville,9,False,0,False
 Trinity Harper,12,False,49,False
 Tudor Merritt,10,False,20,False
 Tyla Conrad,11,False,31,False
+Tyla Frost,13,True,51,False
 Tyla Marriott,12,False,51,False
 Tyrell Pineda,12,False,45,False
 Tyrique Duran,10,False,13,False
@@ -801,7 +840,9 @@ Yousif Regan,10,False,15,False
 Zachary Tait,11,False,34,False
 Zack Frame,11,False,35,False
 Zackery Higgs,12,False,50,False
+Zak Guevara,13,True,50,False
 Zak Stephens,10,False,11,False
+Zaki Christensen,13,False,52,False
 Zakk Harrison,12,False,41,False
 Zane Underwood,10,False,22,False
 Zayd Odom,11,False,38,False

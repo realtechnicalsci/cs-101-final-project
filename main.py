@@ -97,7 +97,7 @@ for student in maui_high:
     juniors += 1
     new_maui_high.append(new_student)
 
-  if new_student.grade == 12 and new_student.credits < 52 and new_student.transferring == False:
+  if new_student.grade == 12 and (new_student.credits < 52 or new_student.graduation_requirements == False) and new_student.transferring == False:
     seniors += 1
     new_maui_high.append(new_student)
     
