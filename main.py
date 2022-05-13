@@ -51,7 +51,7 @@ class Student:
       elif len(student_data) == 3:
         self.name = str(student_data[0])
         self.grade = int(student_data[1])
-        self.high_school = str(student_data[3])
+        self.high_school = str(student_data[2])
         
         
 
@@ -75,6 +75,8 @@ sophomores = 0
 juniors = 0
 seniors = 0
 total_seniors = 0
+waena = 0
+loke = 0
 
 new_maui_high = []
 for student in maui_high:
@@ -114,6 +116,17 @@ for student in maui_high:
   if new_student.grade == 12 and new_student.credits >= 52:
     graduating += 1
 
+for student in maui_waena_intermediate:
+  new_student = Student(student)
+  if new_student.grade == 8 and new_student.high_school == "Maui High":
+    freshmen += 1
+    waena += 1
+
+for student in lokelani_intermediate:
+  new_student = Student(student)
+  if new_student.grade == 8 and new_student.high_school == "Maui High":
+    loke += 1
+    freshmen += 1
 #print(str(new_maui_high))
 # stats is a dictionary. It has already been created for you with all of the data that you need.
 # All you need to take care of is updating these values. This is easy to do. If you'd like to
@@ -136,6 +149,12 @@ print(str(stats["graduating"]))
 
 stats["graduation_rate"] = graduating / total_seniors
 print(str(stats["graduation_rate"]))
+
+stats["maui_waena_incoming"] = waena
+print(str(stats["maui_waena_incoming"]))
+
+stats["lokelani_incoming"] = loke
+print(str(stats["lokelani_incoming"]))
 
 stats["freshmen"] = freshmen
 print(str(stats["freshmen"]))
