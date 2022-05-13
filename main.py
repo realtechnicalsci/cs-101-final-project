@@ -51,7 +51,11 @@ class Student:
       elif len(student_data) == 3:
         self.name = str(student_data[0])
         self.grade = int(student_data[1])
-        self.high_school = str(student_data[2])
+        #self.high_school = str(student_data[2])
+        self.graduation_requirements = False
+        self.credits = 0
+        self.transferring = False
+        
         
         
 
@@ -81,52 +85,68 @@ loke = 0
 new_maui_high = []
 for student in maui_high:
   new_student = Student(student)
-  if new_student.grade == 8 and new_student.high_school == "Maui High":
-    freshmen += 1
   if new_student.grade == 9 and new_student.credits < 13 and new_student.transferring == False:
     freshmen += 1
+    new_maui_high.append(new_student)
 
   if new_student.grade == 10 and new_student.credits < 26 and new_student.transferring == False:
     sophomores += 1
+    new_maui_high.append(new_student)
 
   if new_student.grade == 11 and new_student.credits < 39 and new_student.transferring == False:
     juniors += 1
+    new_maui_high.append(new_student)
 
   if new_student.grade == 12 and new_student.credits < 52 and new_student.transferring == False:
     seniors += 1
+    new_maui_high.append(new_student)
     
   if new_student.grade == 9 and new_student.credits >= 13 and new_student.transferring == False:
     new_student.grade == 10
     sophomores += 1
-    new_maui_high.append([new_student.name, new_student.grade])
+    new_maui_high.append(new_student)
     
   if new_student.grade == 10 and new_student.credits >= 26 and new_student.transferring == False:
     new_student.grade == 11
     juniors += 1
-    new_maui_high.append([new_student.name, new_student.grade])
+    new_maui_high.append(new_student)
     
   if new_student.grade == 11 and new_student.credits >= 39 and new_student.transferring == False:
     new_student.grade == 12
     seniors += 1
-    new_maui_high.append([new_student.name, new_student.grade])
+    new_maui_high.append(new_student)
     
   if new_student.grade == 12:
 		 total_seniors += 1
     
   if new_student.grade == 12 and new_student.credits >= 52:
     graduating += 1
+  new_student.grade += 1
 
 for student in maui_waena_intermediate:
+  if student[2] != "Maui High":
+    continue
   new_student = Student(student)
-  if new_student.grade == 8 and new_student.high_school == "Maui High":
+  if new_student.grade == 8:
+    new_student.grade == 9
     freshmen += 1
     waena += 1
+    new_maui_high.append(new_student)
+  if new_student.grade == 7:
+    continue
 
 for student in lokelani_intermediate:
+  if student[2] != "Maui High":
+    continue
   new_student = Student(student)
-  if new_student.grade == 8 and new_student.high_school == "Maui High":
+  if new_student.grade == 8:
+    new_student.grade == 9
     loke += 1
     freshmen += 1
+    new_maui_high.append(new_student)
+  if new_student.grade == 7:
+    continue
+    
 #print(str(new_maui_high))
 # stats is a dictionary. It has already been created for you with all of the data that you need.
 # All you need to take care of is updating these values. This is easy to do. If you'd like to
