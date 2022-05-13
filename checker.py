@@ -7,14 +7,14 @@ with open("Stats.json") as stats_file:
     stats = json.load(stats_file)
 
 stats_check = {
-    "graduating": 201,
-    "graduation_rate": 0.8553191489361702,
+    "graduating": 193,
+    "graduation_rate": 0.8212765957446808,
     "maui_waena_incoming": 41,
     "lokelani_incoming": 63,
     "freshmen": 135,
     "sophomores": 245,
     "juniors": 231,
-    "seniors": 241
+    "seniors": 249
 }
 
 print("Checking stats...")

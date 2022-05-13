@@ -119,7 +119,7 @@ for student in maui_high:
   if new_student.grade == 12:
 		 total_seniors += 1
     
-  if new_student.grade == 12 and new_student.credits >= 52:
+  if new_student.grade == 12 and new_student.credits >= 52 and new_student.graduation_requirements:
     graduating += 1
   new_student.grade += 1
 
@@ -128,7 +128,7 @@ for student in maui_waena_intermediate:
     continue
   new_student = Student(student)
   if new_student.grade == 8:
-    new_student.grade == 9
+    new_student.grade = 9
     freshmen += 1
     waena += 1
     new_maui_high.append(new_student)
@@ -140,7 +140,7 @@ for student in lokelani_intermediate:
     continue
   new_student = Student(student)
   if new_student.grade == 8:
-    new_student.grade == 9
+    new_student.grade = 9
     loke += 1
     freshmen += 1
     new_maui_high.append(new_student)
