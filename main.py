@@ -26,6 +26,7 @@ with open("LokelaniIntermediate.csv") as lokelani_intermediate_file:
 class Student:
     #TODO: Complete this class. You will need to add additional methods.
     def __init__(self, student_data):
+      if len(student_data) == 5:
         #TODO: Complete this method to initialize student data. Be sure to use the variables outlined here (also seen in the __repr__ method)
         # student_data should be a list with containing:
         # name at index 0 (make this a string)
@@ -46,7 +47,9 @@ class Student:
             self.transferring = True
         elif self.transferring == "not transferring":
             self.transferring = False
-
+      elif len(student_data) == 3:
+        self.name = str(student_data[0])
+        self.grade = int(student_data[1])
         
 
         
@@ -63,22 +66,34 @@ class Student:
 
 # new_maui_high is a list for next year's student data. When you're finished, it should contain
 # a list of Student objects updated for next school year.
+graduating = 0
+freshmen = 0
+sophomores = 0
+juniors = 0
+seniors = 0
+total_seniors = 0
+
 new_maui_high = []
 for student in maui_high:
   new_student = Student(student)
   if new_student.grade == 9 and new_student.credits >= 13:
     new_student.grade == 10
-  	new_maui_high.append(new_student.name)
+    sophomores += 1
+    new_maui_high.append([new_student.name, new_student.grade])
   if new_student.grade == 10 and new_student.credits >= 26:
-  	new_student.grade == 11
-    new_maui_high.append(new_student.name)
-	if new_student.grade == 11 and new_student.credits >= 39:
+    new_student.grade == 11
+    juniors += 1
+    new_maui_high.append([new_student.name, new_student.grade])
+  if new_student.grade == 11 and new_student.credits >= 39:
     new_student.grade == 12
-    new_maui_high.append(new_student.name)
-	if new_student.grade == 12 and new_student.credits >= 52:
-    pass
+    seniors += 1
+    new_maui_high.append([new_student.name, new_student.grade])
+  if new_student.grade == 12:
+		 total_seniors += 1
+  if new_student.grade == 12 and new_student.credits >= 52:
+    graduating += 1
 
-print(str(new_maui_high))
+#print(str(new_maui_high))
 # stats is a dictionary. It has already been created for you with all of the data that you need.
 # All you need to take care of is updating these values. This is easy to do. If you'd like to
 # set "graduating" to 74, for instance, all you have to do is:
@@ -95,6 +110,45 @@ stats = {
 }
 
 #TODO: Write the rest of your code
+stats["graduating"] = graduating
+print(str(stats["graduating"]))
+
+stats["graduation_rate"] = graduating / total_seniors
+print(str(stats["graduation_rate"]))
+
+stats["sophomores"] = sophomores
+print(str(stats["sophomores"]))
+
+stats["juniors"] = juniors
+print(str(stats["juniors"]))
+
+stats["seniors"] = seniors
+print(str(stats["seniors"]))
+
+
+
+
+def add_student():
+  name = input("Enter student name:")
+  with open("MauieHighTest.csv", "a") as maui_high_append:
+        maui_high_append.write(name + "\n")
+
+
+
+
+while True:
+  print("Options")
+  print("Add New Student: 'a'")
+  print("Student Look Up: 'b'")
+  print("Student Update: 'c'")
+  print("Finish: 'x'")
+  option = input("Enter your option: ")
+  if option == 'a':
+    print("hi")
+  elif option == 'x':
+    break
+
+
 
 
 
