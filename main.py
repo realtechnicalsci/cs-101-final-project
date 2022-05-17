@@ -35,17 +35,17 @@ class Student:
         self.grade = int(student_data[1])
         # graduation_requirements at index 2 (make this a boolean - True if they've been met, False if they haven't)
         self.graduation_requirements = student_data[2]
-        if self.graduation_requirements == "met":
+        if self.graduation_requirements == "met" or self.graduation_requirements == "True":
             self.graduation_requirements = True
-        elif self.graduation_requirements == "not met":
+        elif self.graduation_requirements == "not met" or self.graduation_requirements == "False":
             self.graduation_requirements = False
         # credits at index 3 (make this an int)
         self.credits = int(student_data[3])
         # transferring at index 4 (make this a boolean - True if they're transferring, False if they're not)
         self.transferring = student_data[4]
-        if self.transferring == "transferring":
+        if self.transferring == "transferring" or self.transferring == "True":
             self.transferring = True
-        elif self.transferring == "not transferring":
+        elif self.transferring == "not transferring" or self.transferring == "False":
             self.transferring = False
       
       elif len(student_data) == 3:
@@ -85,6 +85,9 @@ loke = 0
 new_maui_high = []
 for student in maui_high:
   new_student = Student(student)
+  if new_student.grade == 12:
+    total_seniors += 1
+    
   if new_student.grade == 9 and new_student.credits < 13 and new_student.transferring == False:
     freshmen += 1
     new_maui_high.append(new_student)
@@ -101,27 +104,24 @@ for student in maui_high:
     seniors += 1
     new_maui_high.append(new_student)
     
-  if new_student.grade == 9 and new_student.credits >= 13 and new_student.transferring == False:
-    new_student.grade == 10
+  if new_student.grade == 9 and new_student.credits > 12 and new_student.transferring == False:
+    new_student.grade = 10
     sophomores += 1
     new_maui_high.append(new_student)
     
-  if new_student.grade == 10 and new_student.credits >= 26 and new_student.transferring == False:
-    new_student.grade == 11
+  if new_student.grade == 10 and new_student.credits > 25 and new_student.transferring == False:
+    new_student.grade = 11
     juniors += 1
     new_maui_high.append(new_student)
     
-  if new_student.grade == 11 and new_student.credits >= 39 and new_student.transferring == False:
-    new_student.grade == 12
+  if new_student.grade == 11 and new_student.credits > 38 and new_student.transferring == False:
+    new_student.grade = 12
     seniors += 1
     new_maui_high.append(new_student)
     
-  if new_student.grade == 12:
-		 total_seniors += 1
-    
-  if new_student.grade == 12 and new_student.credits >= 52 and new_student.graduation_requirements:
+  if new_student.grade == 12 and new_student.credits > 51 and new_student.graduation_requirements:
     graduating += 1
-  new_student.grade += 1
+    new_student.grade += 1
 
 for student in maui_waena_intermediate:
   if student[2] != "Maui High":
@@ -165,58 +165,108 @@ stats = {
 
 #TODO: Write the rest of your code
 stats["graduating"] = graduating
-print(str(stats["graduating"]))
+#print(str(stats["graduating"]))
 
 stats["graduation_rate"] = graduating / total_seniors
-print(str(stats["graduation_rate"]))
+#print(str(stats["graduation_rate"]))
 
 stats["maui_waena_incoming"] = waena
-print(str(stats["maui_waena_incoming"]))
+#print(str(stats["maui_waena_incoming"]))
 
 stats["lokelani_incoming"] = loke
-print(str(stats["lokelani_incoming"]))
+#print(str(stats["lokelani_incoming"]))
 
 stats["freshmen"] = freshmen
-print(str(stats["freshmen"]))
+#print(str(stats["freshmen"]))
 
 stats["sophomores"] = sophomores
-print(str(stats["sophomores"]))
+#print(str(stats["sophomores"]))
 
 stats["juniors"] = juniors
-print(str(stats["juniors"]))
+#print(str(stats["juniors"]))
 
 stats["seniors"] = seniors
-print(str(stats["seniors"]))
+#print(str(stats["seniors"]))
 
 
 
 
 def add_student():
- # name = input("Enter student name:")
- # currencies.append('Yen')
-  pass
+  name = input("Enter student name:")
+  current_credits = input("Current credits:")
+  new_grade = input("New grade: ")
+  student_data = [name, new_grade, False, current_credits, False]
+  new_student = Student(student_data)
+  new_maui_high.append(new_student)
+
+
+
+
 def look_up_student():
-  pass
+  nameornumber = input("Are you searching by name?: ").lower()
+  if "y" in nameornumber:
+    name = input("What student are you trying to look up?: ").lower()
+    z = -1
+    for student in new_maui_high:
+      z += 1
+      #new_student = Student(student)
+      if name in str(student.name).lower():
+        print(str(z) + ": " + str(student))
+  
+    #pass
+  if "n" in nameornumber:
+    number = int(input("What number are they?: "))
+    z = -1
+    for student in new_maui_high:
+      z+= 1
+      if number == z:
+        print(str(z) + ": " + str(student))
+
+
+
+
+
+
 def update_student():
-  pass
+  name = input("What student do you want to change?:")
+  z = -1
+  for student in new_maui_high:
+    z += 1
+    #new_student = Student(student)
+    if name == student.name:
+      print(str(z) + ": " + str(student))
+  student_number = int(input("Select the number of the person you would like to use: "))
+  print("Time to enter some new information")
+  new_grade = input("Enter their updated grade: ")
+  can_graduate = input("Can they graduate (True/False): ")
+  updated_current_credits = input("Enter their updated amount of credits: ")
+  updated_transfer = input("Is this student transfering? (True/False): ")
+  #print(new_maui_high[student_number])
+  name_new = new_maui_high[student_number].name
+  #print(name_new)
+  #new_name = name_new[0] + " " + name_new[1]
+  #print(new_name)
+  student_data = [name_new, str(new_grade), str(can_graduate), str(updated_current_credits), str(updated_transfer)]
+  new_maui_high[student_number] = Student(student_data)
 
 
 
- #while True:
-  #print("Options")
- # print("Add New Student: 'a'")
- # print("Student Look Up: 'b'")
- # print("Student Update: 'c'")
- # print("Finish: 'x'")
-  #option = input("Enter your option: ")
-  #if option == 'a':
-  #  add_student()
- # if option == 'b':
-  #  look_up_student()
-  #if option == 'c':
-  #  update_student()
- # elif option == 'x':
-  #  break
+while True:
+  print("Options")
+  print("Add New Student: 'a'")
+  print("Student Look Up: 'b'")
+  print("Student Update: 'c'")
+  print("Finish: 'x'")
+  option = input("Enter your option: ")
+  print("")
+  if option == 'a':
+    add_student()
+  if option == 'b':
+    look_up_student()
+  if option == 'c':
+    update_student()
+  elif option == 'x':
+    break
 
 
 
